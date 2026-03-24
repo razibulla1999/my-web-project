@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practice</title>
+  <style>
+    .container {
+      margin-bottom: 200px;
+      display: grid;
+      grid-template-columns:repeat(60, 1fr) ;
+      gap: 15px 10px;
+    }
+    .div-1, .div-2, .div-3, .div-4 {
+      grid-column: span 15;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .div-5, .div-6, .div-7, .div-8, .div-9 {
+      grid-column: span 12;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .div-10, .div-11, .div-12 {
+      grid-column: span 20;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .div-13, .div-14, .div-15, .div-16, .div-17 {
+      grid-column: span 12;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;
+    ">
+    <div style=" background-color: lightblue;">
+      div 1
+    </div>
+
+    <div style=" background-color: lightpink;">
+      div 2 <p>text</p>
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+  ">
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+    <div style="background-color: lightpink;">
+      100px<p>text</p>
+    </div>
+    <div style="background-color: lightblue;">
+      200px
+    </div>
+    <div style="background-color: lightpink;">
+      100px
+    </div>    
+  </div>
+
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+  ">
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+    <div style="background-color: lightpink;">
+      1fr
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+
+  ">
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+    <div style="background-color: lightpink;">
+      1fr
+    </div>
+    <div style="background-color: lightblue;">
+      2fr
+    </div>
+  </div>
+
+
+  <div style="
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 20px 20px; 
+    
+  ">
+    <div style="background-color: lightgreen;"> 
+      div-1
+    </div>
+    <div style="background-color: lightskyblue;">
+      div-2
+    </div>
+    <div style="background-color: lightgrey;">
+      div-3
+    </div>
+    <div style="background-color: rgb(223, 223, 16);"> 
+      div-1
+    </div>
+    <div style="background-color: rgb(24, 153, 93);">
+      div-2
+    </div>
+    <div style="background-color: rgb(163, 6, 98);">
+      div-3
+    </div>
+    <div style="background-color: rgb(170, 228, 224);"> 
+      div-1
+    </div>
+    <div style="background-color: rgb(75, 50, 221);">
+      div-2
+    </div>
+    <div style="background-color: rgb(231, 208, 177);">
+      div-3
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="div-1" style="background-color: rgb(92, 204, 241);">
+      Div-1
+    </div>
+    <div class="div-2" style="background-color: lightgreen;">
+      Div-2
+    </div>
+    <div class="div-3" style="background-color: lightskyblue;">
+      Div-3
+    </div>
+    <div class="div-4" style="background-color: lightcoral;">
+      Div-4
+    </div>
+    <div class="div-5" style="background-color: rgb(219, 219, 129);">
+      Div-5
+    </div>
+    <div class="div-6" style="background-color: rgb(129, 233, 181);">
+      Div-6
+    </div>
+    <div class="div-7" style="background-color: rgb(186, 209, 55);">
+      Div-7
+    </div>
+    <div class="div-8" style="background-color: rgb(90, 69, 207);">
+      Div-8
+    </div>
+    <div class="div-9" style="background-color: rgb(189, 41, 202);">
+      Div-9
+    </div>
+    <div class="div-10" style="background-color: rgb(38, 96, 116);">
+      Div-10
+    </div>
+    <div class="div-11" style="background-color: rgb(248, 60, 69);">
+      Div-11
+    </div>
+    <div class="div-12" style="background-color: rgb(42, 118, 143);">
+      Div-12
+    </div>
+    <div class="div-13" style="background-color: rgb(192, 66, 66);">
+      Div-13
+    </div>
+    <div class="div-14" style="background-color: rgb(57, 56, 158);">
+      Div-14
+    </div>
+    <div class="div-15" style="background-color: rgb(155, 39, 209);">
+      Div-15
+    </div>
+    <div class="div-16" style="background-color: rgb(52, 214, 87);">
+      Div-16
+    </div>
+    <div class="div-17" style="background-color: rgb(126, 36, 63);">
+      Div-17
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
