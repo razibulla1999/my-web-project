@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Flip Door</title>
+  <style>
+    .perspective-box {
+      height: 300px;
+      width: 300px;
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 80px;
+    }
+    .perspective-box-child {
+      height: 200px;
+      width: 200px;
+      background-color: dimgray;
+      transform-origin: left;
+      transition: transform 0.6s cubic-bezier(0.55, 0.58, 0.88, 1.25);
+    }
+    .perspective-box-child:hover {
+      transform: rotateY(70deg) scale(1.2);
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+                   5px 5px 10px 5px rgba(20, 25, 2, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="perspective-box">
+    <div class="perspective-box-child">
+
+    </div>
+  </div>
+</body>
+</html>
