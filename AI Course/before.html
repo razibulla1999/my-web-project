@@ -6,11 +6,31 @@
   <title>Before</title>
   <style>
     .slide-btn {
-      
+      padding: 10px 20px;
+      background-color: darkcyan;
+      border: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 3px;
+      width: 0;
+      background-color: blue;
+      transition: all 0.4s;
+      transform: rotate(-23deg);
+      transform-origin: right;
+    }
+    .slide-btn:hover::before{
+      width: 150%;
     }
   </style>
 </head>
 <body>
-  <button class=".slide-btn">Hover</button>
+  <button class="slide-btn">Hover</button>
 </body>
 </html>
