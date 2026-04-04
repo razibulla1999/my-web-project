@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional 12-Column Grid System</title>
+    <style>
+      h2{
+        text-align: center;
+      }
+        /*(Grid Parent) */
+        .grid-container {
+            display: grid;
+            /* Create 12 columns */
+            grid-template-columns: repeat(12, 1fr);
+            /* Row & columns gap*/
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            border: 2px solid #ccc;
+        }
+
+        /* every box-style*/
+        .box {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* ২.(Grid Items) */
+
+        /* (Header/Footer) */
+        .col-12 { grid-column: span 12; background-color: #2c3e50; }
+
+        /* Half colums (6 + 6 = 12) */
+        .col-6 { grid-column: span 6; background-color: #e67e22; }
+
+        /* one-fourth */
+        .col-3 { grid-column: span 3; background-color: #27ae60; }
+
+        /* one-third(৪ + ৪ + ৪ = ১২) */
+        .col-4 { grid-column: span 4; background-color: #8e44ad; }
+
+        /* custome (৮ + ৪ = ১২) */
+        .col-8 { grid-column: span 8; background-color: #d35400; }
+
+        
+    </style>
+</head>
+<body>
+
+    <h2>12-Column Grid</h2>
+
+    <div class="grid-container">
+
+        <div class="box col-12">Header / Full Width (Span 12)</div>
+
+        <!-- (Span 6 + Span 6) -->
+        <div class="box col-6">Half Content (Span 6)</div>
+        <div class="box col-6">Half Content (Span 6)</div>
+
+        <!--(Span 8 + Span 4) -->
+        <div class="box col-8">Main Content (Span 8)</div>
+        <div class="box col-4">Sidebar (Span 4)</div>
+
+        <!-- (Span 3 + 3 + 3 + 3) -->
+        <div class="box col-3">Box (Span 3)</div>
+        <div class="box col-3">Box (Span 3)</div>
+        <div class="box col-3">Box (Span 3)</div>
+        <div class="box col-3">Box (Span 3)</div>
+
+        <!-- (Span 4 + 4 + 4) -->
+        <div class="box col-4">Feature (Span 4)</div>
+        <div class="box col-4">Feature (Span 4)</div>
+        <div class="box col-4">Feature (Span 4)</div>
+
+        <!--(Span 12) -->
+        <div class="box col-12">Footer (Span 12)</div>
+    </div>
+
+</body>
+</html>
