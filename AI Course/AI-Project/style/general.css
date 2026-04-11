@@ -1,0 +1,14 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #4f46e5;
+  --bg-color: #f8fafc;
+  --sidebar-bg: #1e293b;
+  --text-white: #ffffff;
+}
+.main-content {
+  padding-left: 220px;
+}

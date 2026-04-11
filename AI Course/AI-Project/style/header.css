@@ -1,0 +1,30 @@
+.header-content {
+  padding-left: 220px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user-profile img {
+  width: 25px;
+  border-radius: 13px;
+}
+.user-profile{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header-right {
+  display: flex;
+ gap: 10px;
+}

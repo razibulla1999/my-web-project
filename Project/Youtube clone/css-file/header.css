@@ -4,6 +4,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
 }
 
 .left-section {
@@ -13,7 +23,7 @@
 }
 
 .humburger-menu {
-  height: 20px;
+  height: 24px;
   margin-left: 26px;
   margin-right: 26px;
 }
@@ -35,8 +45,8 @@
   height: 34px;
   padding-left: 10px;
   font-size: 16px;
-  border: 1px solid rgb(196, 190, 190);
-  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(192, 192, 192);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
 }
 .search-bar::placeholder {
@@ -46,9 +56,10 @@
 .search-btn {
   height: 38px;
   width: 66px;
-  background-color: rgb(238, 233, 233);
-  border: 1px solid rgb(196, 190, 190);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(192, 192, 192);
   margin-left: -1px;
+  margin-right: 10px;
 }
 .search-icon{
   height: 25px;
@@ -61,6 +72,7 @@
   width: 40px;
   margin-left: 10px;
   border: none;
+  background-color: rgb(245, 245, 245);
 }
 .voice-icon{
  width: 25px;
@@ -80,6 +92,20 @@
 }
 .youtube-app-icon{
   height: 24px;
+}
+.notifications-icon-container {
+  position: relative;
+}
+.notifications-count {
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  font-size: 10px;
+  font-family: Roboto, arial;
+  border-radius: 10px;
+  top: -3px;
+  right: -3px;
 }
 .notification-icon {
   height: 24px;
